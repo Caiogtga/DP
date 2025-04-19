@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jogo SWF com Ruffle</title>
+</head>
+<body>
+
+  <div id="flash-container" style="text-align: center;">
+    <!-- Script do Ruffle -->
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+    
+    <script>
+      const ruffle = RufflePlayer.newest();
+      const container = document.getElementById('flash-container');
+      ruffle.load(container);
+    </script>
+
+    <!-- Aqui vai o arquivo SWF -->
+    <object width="552" height="167" data="DP.swf" type="application/x-shockwave-flash">
+      <param name="movie" value="DP.swf" />
+    </object>
+  </div>
+
+</body>
+</html>
